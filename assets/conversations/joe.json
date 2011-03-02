@@ -1,0 +1,37 @@
+[
+	{
+		"num": 0, // this is how you refer to each object
+		"text": "Hello {name}", // speech from the character
+		"graphic": "", // an optional graphic to display
+		"opt_a": "Hello", // the first option text
+		"goto_a": { // the goto for this option
+			"joe": 1 // move to object 1 for joe
+		}
+	},
+	{
+		"num": 1,
+		"text": "Nice weather today, eh?",
+		"graphic": "",
+		"opt_a": "Yup",
+		"goto_a": {
+			"joe": 0, // loop back to object 0
+			"goal": 0, // add to goal 0
+			"show": "Well, have a good one." // an optional follow-up message
+		},
+		"opt_b": "Whatever",
+		"goto_b": {
+			"follow": 2, // continue joe's conversation immediately with object 2
+			"sub": 0, // subtract from goal 0
+		}
+	},
+	{
+		"num": 2,
+		"text": "Chill out, dude!",
+		"graphic": "",
+		"opt_a": "Sorry, I'm just tired.",
+		"goto_a": {
+			"joe": 0,
+			"show": "Ah, no worries."
+		}
+	}
+]
