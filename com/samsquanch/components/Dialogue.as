@@ -5,8 +5,6 @@ package com.samsquanch.components {
 	import flash.events.Event;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
-	
-	import net.flashpunk.FP;
 
 	/**
 	 * A dialogue/conversation manager for in-game dialogues that can branch
