@@ -1,6 +1,6 @@
 package com.samsquanch.components {
 	import com.adobe.serialization.json.JSON;
-	import com.samsquanchgames.components.*;
+	import com.samsquanch.components.*;
 	
 	import flash.events.Event;
 	import flash.net.URLLoader;
