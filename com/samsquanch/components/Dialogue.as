@@ -248,7 +248,13 @@ package com.samsquanch.components {
 			}
 			
 			// return a response message, if available
-			if (actions.hasOwnProperty ('show') || actions.hasOwnProperty ('follow')) {
+			if (actions.hasOwnProperty ('next')) {
+				state[talkingTo] = actions['next'];
+			}
+			if (actions.hasOwnProperty ('follow')) {
+				state[talkingTo] = actions['follow'];
+				return actions;
+			} else if (actions.hasOwnProperty ('show')) {
 				return actions;
 			}
 			return {};
